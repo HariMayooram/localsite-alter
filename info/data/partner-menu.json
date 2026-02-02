@@ -1,0 +1,87 @@
+[
+{
+	"menulevel": "1",
+	"section": "Page Admin",
+	"title": "Overview",
+	"link": "/info/[itemid]",
+	"icon": "<span class='material-icons'>article</span>"
+},
+{
+	"menulevel": "1",
+	"section": "Page Admin",
+	"title": "Edit Content",
+	"link": "/core/item/edit.aspx?s=[itemid]"
+},
+{
+	"menulevel": "1",
+	"section": "Page Admin",
+	"title": "Edit Event",
+	"link": "/net/calendar/editnew.aspx?s=[itemid]&dateid=[dateid]",
+	"basetype": "2"
+},
+{
+	"menulevel": "1",
+	"section": "Page Admin",
+	"title": "Update Location",
+	"link": "/net/org/edit.aspx?s=[itemid]"
+},
+{
+	"menulevel": "1",
+	"section": "Page Admin",
+	"title": "Add Subtopic",
+	"link": "/core/item/add.aspx?parentid=[itemid]"
+},
+{
+	"section": "Group Members",
+	"title": "View Members",
+	"icon": "<span class='material-icons'>group</span>",
+	"link": "/core/member/list.aspx?load=1&p=[partnerid]&s=[itemid]",
+	"basetype": "3,4"
+},
+{
+	"section": "Group Members",
+	"title": "Add Member",
+	"link": "/account/add?listid=[itemid]&relationAccess=2&p=[itemid]",
+	"basetype": "3,4"
+},
+{
+	"section": "Event Calendar",
+	"title": "View Calendar",
+	"icon": "<span class='material-icons'>event</span>",
+	"link": "/calendar?p=[partnerid]",
+	"basetype": "3,4"
+},
+{
+	"section": "Event Calendar",
+	"title": "Add Event",
+	"link": "/net/calendar/addevent.aspx?s=[itemid]&p=[partnerid]",
+	"basetype": "3,4"
+},
+{
+	"section": "Images and Files",
+	"title": "Images and Files",
+	"icon": "<span class='material-icons'>image</span>",
+	"link": "/elements/[itemid]"
+},
+{
+	"section": "Images and Files",
+	"title": "Add Image or File",
+	"link": "/core/item/upload.aspx?s=[itemid]&p=[partnerid]"
+},
+{
+	"section": "Related Pages",
+	"title": "Related Pages",
+	"icon": "<span class='material-icons'>lan</span>",
+	"link": "/net/content/related.aspx?s=[itemid]"
+},
+{
+	"section": "Related Pages",
+	"title": "Add Related Page",
+	"link": "/core/item/add.aspx?parentid=[itemid]"
+},
+{
+	"section": "Related Pages",
+	"title": "Page Admin",
+	"link": "/net/content/admin.aspx?s=[itemid]"
+}
+]

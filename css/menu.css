@@ -1,0 +1,1059 @@
+.menu-loaded {
+    display: block !important;
+}
+.moduleJS {
+	/* better button fonts:  /localsite/partner-menu.html */
+    font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, calibri, arial, sans-serif;
+}
+.layerSection {
+	min-width:  32px;
+	min-height: 46px;
+	color: #333;
+	clear: both;
+}
+.layerSection.openMenu {
+	min-width: 160px; /* So hideMenuNav() is not triggered too often by a narrow div */
+}
+.layerSectionClick {
+    padding: 6px 8px 0px 12px;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer;
+    text-transform: none;
+    white-space: nowrap;
+}
+@media (max-width: 1100px) {
+	.sectionArrowHolder {
+		display: none;
+	}
+	.revealButton {
+		display: none;
+	}
+	.hideMenuPackage {
+		display: none;
+	}
+}
+.layerCheckboxes {
+	/* min-width: 500px; */
+	width: 100%;
+	/* padding: 20px 4px 20px 20px; */
+}
+.layerCheckboxes .dontsplit {
+	/* padding-bottom: 8px; */
+}
+.layerCheckboxes .first .dontsplit {
+	marginX:0px !important;
+	/* margin-right:10px !important; */
+	paddingX:0px !important;
+}
+.layerCbRow {
+	display:none;
+	padding: 1px 0px 0px 0px;
+	margin-left: 35px;
+	min-height: 32px;
+	color: #888;
+	clear: both;
+}
+.sideMenuColumnNarrow .layerCbRow {
+	background-color: #fff;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #333;
+	width: 180px; /* To overlap sideMenuColumnNarrow */
+}
+.layerCbTitle {
+	white-space:nowrap;
+	margin: 4px 25px 4px 12px;
+	font-size: 15px;
+	pointer-events: none; /* Allow pass through */
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+/* Not sure why this does not set hover color */
+.layerCbRow:hover {
+	background: #ccc;
+	cursor: pointer;
+}
+.sectionArrowHolder {
+    float: right;
+    padding-top: 12px;
+}
+.leftArrow {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7px 0px 7px 8px;
+	border-color: transparent transparent transparent #777;
+	margin-top: -8px;
+}
+.leftArrow:hover {
+	border-color: transparent transparent transparent #999;
+}
+.downArrow {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7px 8px 0 7px;
+	border-color: #555 transparent transparent transparent;
+	margin: -6px 0px 0 0;
+}
+.downArrow:hover {
+	border-color: #999 transparent transparent transparent;
+}
+
+#partnerMenuHolder {
+	min-width: 200px;
+}
+.sideMenuColumn {
+	z-index: 1;
+    width: 200px;
+	min-width: 160px;
+}
+@media (min-width: 1401px) {
+	.layerSectionTitle {
+		display: block;
+	}
+}
+@media (max-width: 600px) {
+	#partnerMenuHolder {
+		max-widthX: 100px; /* Less than 120px to trigger clicks without opening submenu */
+	}
+}
+
+/* Narrow using class */
+.sideMenuColumnNarrow { /* Applied with script. Also applied by scaling below. */
+    width: auto;
+	min-width: 38px;
+	max-width: 38px; 
+}
+.sideMenuColumnNarrow .layerSection {
+	white-space: nowrap;
+	overflow: visible;
+	float: left; /* For ideMenuNav(id) */
+}
+.sideMenuColumnWide .layerSectionTitle:hover {
+	background-color: #eee;
+	border-radius: 10px;
+}
+.sideMenuColumnNarrow .layerSectionTitle {
+	display: none;
+}
+
+.sideMenuColumnNarrow .layerSectionTitle {
+	font-size: 1.2em;
+	width: 160px; /* required for background color to be visible */
+	color: #fff;
+	background-color: #333;
+	margin-top: -8px;
+	margin-left:  -10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 8px;
+	border-top-right-radius: 2px;
+ 	border-top-right-radius: 22px;
+	border-bottom-right-radius: 22px;
+}
+.openMenu {
+	margin-bottom: 12px;
+}
+
+@media (max-width: 1400px) {
+	.sideMenuColumnWide .layerCbRow { /* Allow submenu to be hidden on resize without using javascript */
+		display: none !important;
+	}
+	#partnerMenuHolder {
+		min-width: 32px;
+	}
+	.sideMenuColumn {
+		z-index: 1;
+		min-width: 56px;
+		max-width: 56px;
+		width: 56px;
+		overflow: visible;
+	}
+	.layerSection {
+		/* max-width: 38px; Avoid, else background is not visible. */
+		white-space: nowrap;
+		overflow: visible;
+	}
+	.layerSectionTitle {
+		display: none;
+	}
+	.layerCbRow {
+		display: none; /* hides on resize from wide to narrow */
+	}
+	.layerSection:last-child {
+		margin-bottom: 0px;
+	}
+	.layerSectionIcon {
+		float: initial;
+		min-height: 22px;
+		margin-top: 4px;
+		margin-left: 6px;
+	}
+	.layerSectionClick {
+		min-width: auto;
+		padding-left: 8px;
+	}
+	.layerCbRowXXX {
+		display:none !important;
+	}
+	.sectionArrowHolder {
+		display:none;
+	}
+}
+.sideListCell {
+	border-right: 1px solid #ddd;
+}
+.sideList {
+	margin: 20px;
+	min-width: 200px;
+	max-width: 300px;
+}
+.leftCell {
+	padding-top: 20px;
+}
+@media (max-width: 800px) {
+	.sideListCell {
+		border-right: none;
+	}
+	.leftCell {
+		max-width: 90%; /* Allows partnerAdmin menu to reside to the left on mobile */
+	}
+	.rightCell {
+		width: 100%;
+	}
+}
+.layerSectionOpenX {
+	max-width: auto;
+	overflow: visible;
+	max-width: 200px; /* allow background color to be visible */
+	background-color: #efefef;
+	borderX: 1px solid #777;
+	marginX:  -1px;
+	margin-leftX: 0px;
+	z-index: 100000;
+}
+
+.layerAction {
+	clear:both;
+	float:right;
+	width: 100%;
+	z-index: 9999;
+	/* min-height: 34px; */
+	/* border: 1px solid red; */
+	cursor: pointer;
+}
+.layerActionActive {
+	/* color: #3B99FC !important; */
+}
+.moduleJS .layerActionActive:before {
+	color:#fff;
+}
+.layerActionIcon {
+	margin-top: 2px;
+	float:right;
+	border-radius: 50%;
+	width: 21px;
+	height: 21px;
+	margin-top: 12px;
+	margin-right: 8px;
+	/* background-color: #272727; */
+}
+.layerActionIcon:before {
+	padding: 2px;
+	line-height: 23px;
+	font-size: 17px;
+	color: #bbb;
+	font-weight: 100;
+	font-family: "Material Icons";
+	content: "\E5D3"; /* Three dots */
+}
+.layerActionIconNoFeed:before {
+	content: ""; /* Blank since no feed for layer. */
+}
+.layerActionActive {
+	background-color: #3B99FC;
+}
+.layerActionActive:before {
+	padding: 1px;
+	font-size: 20px;
+	color: #000;
+	font-family: "Material Icons";
+	content: "\E876"; /* checkbox */
+	font-weight: 100;
+}
+.moduleJS .overlaysInSide .layerCbRow {
+	position: relative;
+}
+.moduleJS .overlayAction {
+	borderX: 1px solid red;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	top:0px;
+	width:30px;
+	padding-right: 6px;
+}
+.layersCB {
+	display: none;
+}
+.searchHeader {
+	/* overflow: visible; */
+}
+.navClone {
+	float: left;
+	background-color: rgba(55, 55, 55, 0.8);
+	margin:20px 0 20px 20px;
+	display:none;
+}
+.navClone .layerSectionClick {
+	display: none;
+}
+.navClone .layerCbRow {
+	display: block;
+}
+
+.dropdown-menu-for-button {
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    background-clip: padding-box;
+}
+
+.dropdown-menu {
+	position: absolute;
+	display: none;
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    background-clip: padding-box;
+}
+.dropdown-menu a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.dropdown-menu a:hover, .dropdown-menu > li > a:hover {
+	background-color: #3076ae; /* For browsers that do not support gradients */
+  	background-image: linear-gradient(#3887c6, #3076ae);
+	color: #fff;
+	text-decoration: none;
+}
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 1px;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+/* Open nav icons when rolling over. Originally Bootstrap. */
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;    
+}
+.nav-pills .dropdown-menu {
+    margin-top: 0px;
+}
+.nav-pills {
+	padding: 0px;
+	margin: 0px;
+    margin-right: 3px;
+    margin-bottom: 0px;
+    list-style-type: none;
+}
+
+.navbar .nav>li {
+	float: left;
+}
+.navbar .nav > li > .dropdown-menu:before {
+    content: '';
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: -7px;
+    left: 9px;
+}
+.navbar .nav > li > .dropdown-menu:after {
+    content: '';
+    display: inline-block;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    position: absolute;
+    top: -6px;
+    left: 10px;
+}
+
+.navbar .nav.pull-right {
+    float: right;
+}
+.pull-right .dropdown-menu {
+	right: 0px;
+}
+.navbar .pull-right > li > .dropdown-menu:before {
+	left: auto;
+	right: 12px;
+}
+.navbar .pull-right > li > .dropdown-menu:after {
+	left: auto;
+	right: 13px;
+}
+
+.nav-tabs>li, .nav-pills>li {
+    float: left;
+}
+.dropdown {
+    position: relative;
+}
+.nav {
+    display: block;
+}
+.nav-pills li a {
+    font-weight: normal;
+}
+.nav>li>a {
+    padding: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.nav-pills>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.nav-tabs>li>a, .nav-pills>li>a {
+	text-decoration: none;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 2px;
+    line-height: 14px;
+}
+.nav>li>a {
+    display: block;
+}
+
+/* For main-nav from header.html */
+.main-nav-inpage .sidecolumnLeft {
+    position: static !important;
+    float:left;
+    padding: 0px;
+}
+.main-nav-inpage .main-nav-scroll {
+    position: relative;
+    bottom:auto !important;
+    right:0 !important;
+}
+
+.main-nav {
+    width: 190px;
+    min-width: 190px;
+    padding-right: 0px;
+	border-right: 1px solid #ddd;
+	heightX: 100%;
+	top: var(--header-height);
+}
+@media (max-width: 600px) {
+	.main-nav {
+    	width: 100% !important;
+	}
+	#showSideFromHeader i {
+		margin-top: 4px;
+	}
+	#showSideFromHeader i {
+	    font-size: 40px;
+	    min-width: 48px;
+	}
+	.headerbarheight {
+		height: 60px;
+		min-height: 60px;
+	}
+	.close-X-sm { /* .hideSide */
+		padding: 15px;
+		font-size: 24px;
+	}
+}
+.listcolumn {
+    position: fixed;
+    width:380px;
+    padding-right:0px;
+	top: 80px;
+    left: 257px;
+	bottom:0;
+	background-color: #ddd;
+}
+.listcolumnOnly {
+	left:0px;
+}
+.datascapeX { /* caused gap for docs */
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	/*
+	max-height: 1000px;
+	overflow: hidden;
+	*/
+}
+.datascape .listcolumn { /* Display next to map */
+	position: relative;
+	float: left;
+	top:auto; left:auto; bottom:auto;
+}
+.datascapeEmbed {
+	display: flex;
+	flex-direction: row;
+}
+.datascapeEmbed #listcolumn {
+	max-height: 1200px;
+}
+#insertedText {
+	flex: 1;
+}
+.pagecolumnToTop {
+	top: 0px;
+}
+.rightIcons {
+	position: absolute;
+	right: 0px;
+	z-index: 999;
+	font-size: 44px;
+	text-shadow: 1px 1px 4px #fff;
+	padding-right: 16px;
+}
+.dark .rightIcons {
+	text-shadow: none;
+}
+.bothSideIcons {
+  top:0px;
+  z-index:100;
+}
+.pagecolumnLowX {
+	top: 58px;
+}
+.pagecolumnLowerX { /* same as #local-header */
+	top:79px;
+}
+.sideIconsLowerX {
+  top:79px;
+}
+#showNavColumn {
+	pointer-events: auto;
+	padding: 9px 12px 2px 10px;
+	height: 37px;
+ 	opacity: .3;
+ 	cursor: pointer;
+ 	position: relative;
+ 	z-index: 1001;
+}
+.showList {
+	cursor: pointer;
+}
+.showNavColumn:hover, .showList:hover {
+ 	opacity: .7;
+ 	cursor: pointer;
+}
+
+/*
+@media (min-width: 600px) and (max-width: 1100px) {
+	#showNavColumn {
+		margin-left: -23px;
+	}
+}
+*/
+.dark #showNavColumn .material-icons {
+	background-color: #000 !important;
+	color: #fff !important;
+}
+#filterFieldsMain #showNavColumn {
+	float: left;
+}
+.sidecolumnLeft {
+    line-height: 28px;
+    font-size: 15px;
+    bottom:0;
+    z-index:200; /* 1 allows border highlight to overlap adjacent content area. At least 101 is needed for OpenWebUI */
+}
+@media (max-width: 600px) {
+	.sidecolumnLeft {
+	    font-size: 18px;
+	    line-height: 35px;
+	}
+}
+#cloneRight {
+	position:inherit;
+    line-height: 34px;
+    font-size: 18px;
+}
+#main-nav .navcolumnIndent {
+	margin-left: 25px;
+}
+#navcolumnTitle {
+	padding-left: 25px;
+	margin-right: 10px;
+	margin-bottom: 11px;
+	font-weight: 800;
+	font-size: 16px;
+	text-transform: uppercase;
+    line-height: 1.2em;
+}
+#listLeft b, .sidecolumnLeft b, #cloneRight b {
+    color:#333;
+    font-weight:800;
+}
+#listLeft .legendDot {
+	padding:0px;
+	width:13px;
+	height:13px;
+	border:1px solid #ccc;
+	margin-top:0px;
+	margin-left:1px;
+	margin-right:7px;
+	float:left;
+}
+.main-nav-scroll {
+    position:sticky;
+    top:0px; /* was 30px */
+    height: calc(100vh - var(--header-offset-height, 79px)); /* Dynamically subtract header offset height */
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    padding-bottom: 500px; /* Allows for footer */
+    padding-top: 38px;
+}
+.main-nav-scroll::-webkit-scrollbar {
+  display: none;
+}
+.main-nav-scrollLower {
+	padding-top: 70px;
+}
+
+.sidecolumnLeft a, #cloneRight a {
+    display:block;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.catList>div {
+	cursor: pointer;
+	padding-left: 3px;
+	font-size: 13px;
+	line-height: 1.1em;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 4px;
+	clear: both;
+}
+.catList div:hover, .sidecolumnLeft a:hover, .sidecolumnLeft a.active:hover, #cloneRight a:hover {
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+}
+.catListAddMargin>div {
+	padding-left: 24px;
+}
+.sidecolumnLeft b a {
+	color: #333;
+	font-size: 16px;
+	line-height: 1.8em;
+	padding-left: 20px;
+}
+.sidecolumnLeft a.active {
+    border-right: 4px solid #888;
+    background-color: rgba(33, 33, 33, 0.06);
+    margin-left:-6px;
+    padding-left:20px;
+}
+.navcolumnClear {
+	background-color: initial;
+	border: 0px;
+	font-size: 18px;
+	width: 100%;
+	/* max-width: 300px; */
+}
+@media (max-width: 800px) {
+	.navcolumnClear {
+		background-color: #aaa;
+	}
+}
+.navcolumnClear b a, .navcolumnClear b a:visited {
+	color: #fff !important; /* important to override base.css. Not sure why this later css not given priority. */
+}
+#main-layout {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow-y: auto; /* Allows #side-nav to avoid scrolling up, resulting in a space below #side-nav-footer */
+}
+#main-container {
+	display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+}
+#main-content {
+	flex: 1 1 auto;
+	min-width: 0; /* Allow map/filter bar to shrink when sidebar opens */
+}
+.dark #main-container  a:link, .dark #main-container  a:visited {
+  color: #acb;
+}
+.dark #main-container  b a:link, .dark #main-container  b a:visited {
+  color: #ccc;
+}
+.dark #main-container h1, .dark #main-container h2, .dark #main-container h3, .dark #main-container h4, .dark #main-container h5, .dark #main-container h6 {
+  color: #ccc;
+}
+.dark .btn {
+	color: #fff !important;
+}
+.navLinks a {
+  height: 42px;
+  /* Causes DS footer to mis-align
+  display: block;
+  float: left;
+  */
+  color: #aaa;
+  text-decoration: none !important;
+  margin: 1px;
+  margin-rightX:2px !important;
+  padding:8px 13px 8px 13px;
+  font: 400 16px/1.8 "Lato", sans-serif;
+  -webkit-font-smoothing: inherit !important;
+}
+.dark #main-container .navLinks a:link, .dark #main-container .navLinks a:visited {
+  color: #fff;
+}
+.navLinks a:hover {
+    colorX: #555;
+    background-colorX: #ddd;
+    text-decoration: none !important;
+    font-weightX: bolder;
+    border: 1px solid #777;
+    margin: 0px;
+}
+.navLinks .navActive {
+    font: 600 16px/1.8 "Lato", sans-serif !important;
+    color: #444 !important;
+}
+
+@media (max-width: 800px) {
+    #main-nav {
+      displayX: none;
+      z-index: 1000;
+    }
+}
+.main-nav-inpage {
+    position: static !important;
+    position: relative;
+}
+.main-nav-inpage > .sidecolumnLeft {
+    position: static;
+}
+.navcolumnBar {
+	width: 100%;
+	overflow: auto;
+	background-color: #aaa;
+	position: absolute;
+	top: 0;
+	display: none;
+}
+/* End For main-nav from header.html */
+
+#rightTopMenu select {
+    width: 280px;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 1;
+    border-radius: 6px;
+    font-size: 16pt;
+    color: #ddd;
+    background-color: #777;
+    margin-right: 30px;
+    padding-right: 30px;
+    border: 0px !important;
+}
+.dark #rightTopMenu select {
+	color: #eee !important;
+}
+.menuExpanded {
+    min-height: 200px;
+    height: 100%;
+    color: #cfcfcf;
+    background-color: #555;
+    box-sizing: border-box;
+    position: relative;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; /* avoiding 'Nunito Sans' for menu */
+}
+.menuExpanded h2, .menuExpanded h3, .menuExpanded h4 {
+	color: #ccc;
+}
+.menuExpanded a, .menuExpanded a:visited {
+	color: #acb;
+	text-decoration: none;
+}
+.menuExpandedScroll {
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    padding: 12px 24px 34px 20px;
+}
+.menuTitle {
+  font-size:18pt;
+  margin-bottom:30px
+}
+.accountPanel {
+    position:absolute;
+    right:0;
+    z-index: 500;
+    display:none;
+    color: #cfcfcf;
+    background-color: #353535;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 24px;
+    margin:0 0 17px 0;
+    width: 300px;
+}
+.setLeft {
+    float: left;
+    max-width: 250px;
+    min-width: 100px;
+    font-size: 18px;
+}
+.setDiv {
+    clear: both;
+    /* float:left; */
+    width:100%;
+    /* border-bottom: 1px solid #ddd; */
+    margin: 10px 0 10px 0;
+    padding-top:5px;
+}
+.setOverflow {
+    float: left;
+    min-width: 120px;
+}
+#rightSideTabs {
+	width:500px;
+}
+@media (max-width: 1000px) {
+	#rightSideTabs {
+		width:100%;
+	}
+}
+.rightTopItem {
+    padding: 11px 4px 5px 10px;
+}
+.rightTopItem > * {
+	pointer-events: none !important;
+}
+#rightTopMenu {
+    pointer-events: auto; /* Prevents click from reching image, and hover from reaching map below */
+    box-shadow: 2px 2px 6px #333;
+    height: 100%;
+    box-shadow: -8px -2px 8px 1px rgba(0, 0, 0, 0.4);
+}
+#rightTopMenu p {
+	margin-bottom: 6px;
+}
+#rightTopMenu h2 {
+	font-size: 22px;
+	padding-top: 0px;
+	margin-top: 0px;
+	border-bottom: 0px;
+	margin-bottom: 10px;
+	line-height: 32px;
+}
+#rightTopMenu h4 {
+	margin-bottom: 0px;
+	font-weight: 400;
+}
+@media (max-width: 800px) {
+	#rightTopMenu {
+		left: 0px;
+	}
+}
+.rightTopMenuLeft {
+    /* top: 48px; */
+    float:left;
+}
+/* Avoid adding .moduleJS to three-dot menu, else font-family not applied to left menu  */
+.rightTopMenuInner { /* lives outside .moduleJS when full header displayed */
+    min-width: 110px;
+    font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, calibri, arial, sans-serif;
+    padding-left: 8px;
+    max-width: 165px;
+}
+.rightTopMenuInner i {
+    color: #ddd !important;
+}
+.rightTopMenuInner {
+    background-color: rgba(33, 33, 33, 1);
+}
+.rightTopMenuInner > .active {
+  background-color: #555;
+  /* border-left: 8px solid yellow; */
+}
+.rightTopItem {
+    clear: both;
+    width: 100%;
+    overflow: auto;
+    padding-left: 16px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+.rightTopItem:hover {
+    background-color: #000;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+}
+.rightTopItem.active {
+    background-color: #555;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+}
+.rightTopItem i {
+    width:37.5px;
+    min-height: 36px;
+    float: left;
+    font-size: 30px;
+    padding-top: 1px;
+}
+.rightTopItem span {
+    color:#fff;
+    padding: 5px 3px 8px 2px;
+    float:left;
+    color: #fff;
+    font-size: 19px;
+}
+.rightTopItem .contactIcon {
+    font-size: 30px !important;
+    margin-top:-4px;
+    margin-left:-2px;
+    margin-right: 3px;
+}
+.rightTopItem .enlargeIcon {
+    font-size: 40px !important;
+    margin-top: -8px;
+    margin-left: -7px;
+    margin-right: 5px;
+}
+@media (max-width: 479px) {
+    .rightTopMenuInner {
+        font-size: 24px;
+        width: 70px;
+        max-width: 70px;
+        min-width: 70px;
+    }
+    .rightTopMenuInner i {
+        font-size: 30px;
+        padding-top: 0px;
+        padding-left: 12px;
+        padding-bottom: 10px;
+    }
+    .rightTopMenuInner .rightTopItem {
+        /* border-bottom: 1px solid #aaa; */
+    }
+    .rightTopItem span {
+    	display: none;
+    }
+    .rightTopItem {
+    	padding: 0;
+    	margin-bottom: 10px;
+    }
+}
+/* End Settings Menu */
+
+/* Locations Section in Sidebar */
+#locations-header {
+    padding: 0;
+    margin-bottom: 0;
+}
+#locations-header > b {
+    display: block;
+    margin-bottom: 0;
+}
+#locations-header > b a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8em;
+    padding-left: 20px;
+    cursor: pointer;
+}
+#locations-header > b a:hover {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+#locations-content {
+    padding: 0 10px 10px 20px;
+}
+/* Locations/Continents Toggle */
+.legend-view-toggle {
+    display: flex;
+    background: rgba(0,0,0,0.06);
+    border-radius: 6px;
+    padding: 2px;
+    gap: 2px;
+    margin-bottom: 8px;
+}
+.view-toggle-btn {
+    padding: 4px 10px;
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.view-toggle-btn:hover {
+    color: #333;
+    background: rgba(255,255,255,0.5);
+}
+.view-toggle-btn.active {
+    background: #fff;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}

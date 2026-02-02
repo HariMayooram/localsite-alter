@@ -1,0 +1,144 @@
+/*!
+ * Bootswatch v4.5.0
+ * Homepage: https://bootswatch.com
+ * Copyright 2012-2020 Thomas Park
+ * Licensed under MIT
+ * Based on Bootstrap
+*//*!
+ * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+/* CUSTOM */
+/* Removed import line above */
+/* Also insert "dark" class into body tag. */
+select {
+    background-color: #333;
+    color: #fff !important;
+}
+hr {
+    border-bottom: 1px solid #ccc;
+}
+/*
+html, body, #main-container, 
+*/
+.litePanel, #header, #footer, .headerbar, #sidecolumn, #rightcolumn {
+    background-colorX: rgba(0, 0, 0, .5);
+    background-color: #444;
+    color: #fff;
+    line-heightX: 1;
+}
+/*
+#main-container {
+	background-color: rgba(0, 0, 0, .6);
+}
+*/
+a:link, a:visited {
+  color: #acb;
+}
+.greyDiv {
+    color: #fff;
+    background-color: #666 !important;
+}
+.greyDiv b, .greyDiv .maincat, .greyDiv b a, .greyDiv b a:visited {
+    color: #ccc !important;
+}
+.greyDiv .close-X-sm:hover {
+    color: #fff;
+}
+.liteDiv {
+    border-right: #333 1px solid !important;
+}
+#headerbar {
+    border-bottom: 0px solid #999 !important;
+}
+.headerbar {
+	background: #222;
+	border-bottom-color: #222;
+}
+.headerbar a:link, .headerbar a:visited {
+    color: #ccc;
+}
+.headerbar a:link:hover, .headerbar a:visited:hover {
+    color: #fff !important;
+}
+.headerbar .headerIcons {
+    color: #fff !important;
+}
+.iconPadding:hover {
+    background-color: #000;
+    color: #ccc;
+}
+#headerIcons {
+    color: #ccc;
+}
+#headerIcons:hover {
+    color: #fff;
+    background-color: #555;
+}
+.showSideTabs i {
+    font-weight: 100 !important;
+}
+.navLinks a:hover {
+    background-color: #555;
+}
+#keywordsTB::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+#keywordsTB.text:focus {
+    border: auto !important;
+}
+.filterClick {
+    border-right: 1px solid #333 !important;
+    border-bottom: 1px solid #333 !important;
+}
+/* .filterClick:hover, Avoid with dark */
+.detailbutton:hover {
+    background-color: rgb(77 77 77/95%) !important;
+    color: #fff !important;
+}
+.hamburger-circle {
+  content: url("/localsite/img/icon/hamburger-lite.png");
+}
+.upperIcons > div {
+	border:0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #ccc;
+}
+h1 {
+	font-size: 1.6em;
+}
+.h1-home {
+	font-weight: 400;
+}
+h2 {
+	font-size: 1.4em;
+}
+h3 {
+	font-size: 1.2em;
+}
+#sidecolumn a {
+	color: #aac;
+}
+/* Twitter */
+#rightcolumn {
+	display: none; /* Temp until we find Twitter param setting */
+}
+.timeline-Widget {
+	display: none;
+	background-color: #555 !important;
+	background: #555 !important;
+}
+.detail:hover {
+    background-color: #111;
+}
+.upperIcons img {
+	-webkit-filter: invert(1);
+   filter: invert(1);
+}
+#footer {
+	background-color: #222;
+}

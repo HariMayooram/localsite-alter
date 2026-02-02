@@ -1,0 +1,226 @@
+<style>
+#main-footer .pageColumn {
+    width: 100%;
+}
+#main-footer .pageColumn h2 {
+  border-bottom: 1px solid #aaa;
+  font-size: 20px;
+}
+#main-footer .pageColumn {
+  float:left;
+  width: 100%;
+}
+@media (min-width: 550px) {
+  #main-footer .pageColumn {
+    width: 50%;
+  }
+}
+@media (min-width: 950px) {
+  #main-footer .pageColumn {
+    width: 25%;
+  }
+}
+
+@media (min-width: 950px) {
+  body:not(.mobileView) #main-footer .dreamstudio .pageColumn {
+    width: 22%;
+  }
+  body:not(.mobileView) #main-footer .dreamstudio .pageColumn:first-of-type {
+    width: 30%;
+  }
+}
+
+.mobileView #main-footer .pageColumn {
+  width: 50%;
+}
+@media (max-width: 650px) {
+  #footerlogos > a, #footerlogos > div {
+    float:none !important;
+    overflow: none !important;
+    margin: 0 0 50px 0 !important;
+    text-align: left !important;
+  }
+}
+#main-footer {
+  clear: both;
+  position: relative;
+  /* z-index: 1000; Overlapped side shadow */
+  background: #dae8eb;
+}
+#main-footer .greybkgd {
+  background: #ccc;
+}
+.dark #main-footer .greybkgd {
+  background: #222;
+}
+#main-footer a:link, #main-footer a:visited, #main-footer a:visited {
+    color: #0366d6;
+}
+#main-footer b a:link, #main-footer b a:visited, #main-footer b a:visited {
+    color: #222;
+}
+.dark #main-footer b a:link, .dark #main-footer b a:visited, .dark #main-footer b a:visited {
+    color: #ccc;
+}
+.dark #main-footer {
+  background-color: #555; /* first darken ds logo */
+  background-color: #222;
+}
+.dark #main-footer h2 {
+  color: #fff;
+}
+.dark #main-footer a {
+  color: #ccc;
+}
+.dark #main-footer a:hover {
+  color: #fff;
+}
+@media (max-width: 800px) {
+  #main-footer div {
+    /* Avoid until adjusted, creates unintended colored edge or top */
+    padding-leftX: 30px
+  }
+}
+.bodyLeftMarginFull #main-footer h2 {
+  font-size: 18px;
+}
+</style>
+
+<div class="dreamstudio" style="display:none">
+<div class="greybkgd">
+  <div class="content contentpadding" style="padding-top:40px;padding-bottom:25px;">
+
+  <div class="pageColumns">
+
+      <div class="pageColumn">
+        <div class="pageColumnInside">
+          <div id="headerLogo"><a href="../"><img src="/localsite/img/logo/dreamstudio/text.png" alt="DreamStudio" style="height:19px; margin-top:2px" class="headerLogoDesktop"></a></div><br>
+          <div style="font-size:13px; clear:both">
+            Collaborative Data Science
+          </div><br>
+        </div>
+      </div>
+      
+      <div class="pageColumn">
+        <div class="pageColumnInside">
+          <b><a href="../home/">ABOUT</a></b><br>
+          <a href="../home/">DreamStudio</a><br>
+          <a href="../earth/">Meet Our Team</a><br>
+          <a href="../projects/about/">About Our Projects</a><br>
+          <a href="../io/coders/">Get Involved</a><br>
+        </div>
+      </div>
+
+      <div class="pageColumn">
+        <div class="pageColumnInside">
+           <b><a href="../projects">PROJECTS</a></b><br>
+           <a href="../community/">Model.Earth</a><br>
+          <a href="../localsite/timeline">Goal Timelines</a><br>
+          <a href="../profile/trade/">World Trade Flow</a><br>
+          <a href="../feed">Feed Player</a><br>
+        </div>
+      </div>
+
+      <div class="pageColumn">
+        <div class="pageColumnInside">
+          <b><a href="../io/projects/">DATA SCIENCE</a></b><br>
+          <a href="../projects/">Active Projects</a><br>
+          <a href="../io/">IO Model Building</a><br>
+          <a href="../realitystream/models">RealityStream ML</a><br>
+          <a href="../community/projects/">Moonshots</a><br>
+        </div>
+      </div>
+
+      <div style="clear:both"></div>
+
+  </div>
+
+  </div>
+
+  <div style="clear:both"></div>
+
+</div>
+</div>
+
+<!--
+<div class="planetlive" style="display:none">
+<div class="greybkgd">
+  <div class="content contentpadding" style="padding-top:40px;padding-bottom:25px;">
+
+    <a href="../video/">Starman Loop</a>
+
+  </div>
+
+  <div style="clear:both"></div>
+
+</div>
+</div>
+-->
+
+<div class="earth" style="display:none">
+  <div class="content contentpadding" style="padding-bottom:15px;">
+
+  <div class="pageColumns">
+
+      <div class="pageColumn">
+        <div class="pageColumnInside">
+            <h2>About</h2>
+            <a href="../projects/about/" target="_parent">About Our Projects</a><br>
+  		      <a href="../io/" target="_parent">Inflow-Outflow Models</a><br>
+  		      <a href="../io/learn/" target="_parent">For Research Projects</a><br>
+            <a href="../io/coders/" target="_parent">Meetups and Teams</a><br>
+        </div>
+      </div>
+      
+      <div class="pageColumn">
+        <div class="pageColumnInside">
+          <h2>Industry Data</h2>
+          <a href="../projects/" target="_parent">Active Projects</a><br>
+          <a href="../localsite/info/" target="_parent">Input-Output Charts</a><br>
+          <a href="../localsite/" target="_parent">Localsite Parameters</a><br>
+          <a href="../localsite/start/" target="_parent">Starter Samples</a><br>
+        </div>
+
+      </div>
+
+      <div class="pageColumn">
+        <div class="pageColumnInside">
+          <h2>State Models</h2>
+          <a href="../apps/" target="_parent">Location Modeling</a><br>
+          <a href="../community-data/" target="_parent">Community Datasets</a><br>
+          <a href="../io/template/" target="_parent">Impact Template</a><br>
+          <!--
+          <a href="../apps/ev/" target="_parent">Vehicle Parts</a><br>
+          <a href="../apps/coastal/" target="_parent">Coastal Recycling</a><br>
+          <a href="../earthscape/app/" target="_parent">Earthscape AI</a><br>
+          -->
+          <a href="../io/about/" target="_parent">State IO Data</a><br>
+        </div>
+      </div>
+
+
+      <div class="pageColumn">
+        <div class="pageColumnInside">
+          <h2>Model Earth</h2>
+            <a href="../community/tools/" target="_parent">Tool Overview</a><br>
+            <!--<a href="../io/template/feed/" target="_parent">OpenEPD API</a><br>-->
+            <a href="../io/charts" target="_parent">Embed Widgets</a><br>
+            <a href="https://github.com/modelearth">GitHub Repos</a><br>
+            <a href="../community/projects" target="_parent">Moonshots</a><br>
+        </div>
+
+      </div>
+
+      <div style="clear:both"><br></div>
+      <div style="border-top:1px solid #ccc; padding-top:20px; padding-bottom:14px; width:96%">
+        <a href="https://dreamstudio.com/">DreamStudio Collaborative Data Science</a> - 
+        <a href="https://dreamstudio.com/earth">Contact&nbsp;Our&nbsp;Team</a>
+      </div>
+  </div>
+
+  </div>
+
+  <div style="clear:both"></div>
+
+</div>
+
